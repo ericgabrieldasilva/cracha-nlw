@@ -1,0 +1,84 @@
+/*-----RESET-------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root{
+  --black: hsl(240, 6%, 13%);
+  --gray: hsla(240, 9%, 89%);
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background-image: url('../images/background.png');
+  width: 375px;
+  height: 812px;
+}
+
+.container {
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+
+  color: var(--gray);
+}
+
+.avatar{
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.avatar span{
+  position: absolute;
+  z-index: 1;
+  top: -15px;
+}
+
+.avatar > img{
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 26%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+  color: var(--gray);
+}
+
+p {
+  font-size: 0.875;
+  margin-top: 2rem;
+}
+
+ul{
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
