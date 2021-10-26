@@ -95,12 +95,27 @@ ul {
     top: 0;
   }
 
+  .strip{
+    top: -500px;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    animation: fadeInStrip .5s ease-in-out 1.5s forwards;
+  }
+
+  @keyframes fadeInStrip{
+    to{
+      top: 0;
+      opacity: 1;
+    }
+  }
+
   .strip::before{
     content: "";
     position: absolute;
     z-index: 2;
     left: 50%;
-    bottom: 32.8rem;
+    bottom: -1rem;
     width: 4rem;
     height: 45vh;
     background-image: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
@@ -127,14 +142,89 @@ ul {
     position: relative;
     z-index: 1;
     margin: 4rem 0;
+    position: relative;
+    bottom: -500px;
+    opacity: 0;
+    animation: fadeInBackground .5s ease-in-out 1s forwards;
+  }
+
+  @keyframes fadeInBackground{
+    to{
+      bottom: 0;
+      opacity: 1;
+    }
   }
 
   .avatar {
     margin: 4.5rem auto 0;
+    position: relative;
+    top: -2rem;
+    opacity: 0;
+    animation: fadeInAvatar .5s ease-in-out 2s forwards;
+  }
+
+  @keyframes fadeInAvatar{
+    to{
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  h1{
+    position: relative;
+    left: -100px;
+    opacity: 0;
+    animation: fadeInUserName .5s ease-in-out 2.5s forwards;
+  }
+
+  @keyframes fadeInUserName{
+    to{
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  #userLink{
+    position: relative;
+    right: -100px;
+    opacity: 0;
+    animation: fadeInUserLink .5s ease-in-out 2.5s forwards;
+  }
+
+  @keyframes fadeInUserLink{
+    to{
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  p{
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    animation: fadeInUserBio .5s ease-in-out 3s forwards;
+  }
+
+  @keyframes fadeInUserBio{
+    to{
+      top: 0;
+      opacity: 1;
+    }
   }
 
   ul{
     margin-bottom: 2rem;
+    position: relative;
+    bottom: -50px;
+    opacity: 0;
+    animation: fadeInSocialLinks .5s ease-in-out 3s forwards;
+  }
+
+  @keyframes fadeInSocialLinks{
+    to{
+      bottom: 0;
+      opacity: 1;
+    }
   }
 
 }
