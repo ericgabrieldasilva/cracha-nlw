@@ -95,19 +95,19 @@ ul {
     top: 0;
   }
 
-  .range::before{
+  .strip::before{
     content: "";
     position: absolute;
     z-index: 2;
     left: 50%;
-    top: -149rem;
+    bottom: 32.8rem;
     width: 4rem;
-    height: 150rem;
+    height: 45vh;
     background-image: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
     transform: translateX(-50%);
   }
 
-  .range::after{
+  .strip::after{
     content: "";
     width: 5rem;
     height: .5rem;
